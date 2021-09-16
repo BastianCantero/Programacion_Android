@@ -13,10 +13,10 @@ public class MainActivity2 extends AppCompatActivity {
     private Button btnVolver;
     private TextView lblName, lblLenguaje, lblFav;
 
-    /*public String name = "name";
+    public CharSequence name = "namexf";
     public String lastName = "lastName";
     public String lenguaje = "lenguaje";
-    public String fav = "fav";*/
+    public String fav = "fav";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,6 +30,8 @@ public class MainActivity2 extends AppCompatActivity {
         lblFav = findViewById(R.id.lbl3);
 
         MainActivity m1 = new MainActivity();
+        name = m1.name;
+        lblsetText();
 
         /*lblName.setText(name + " " + lastName);
         lblLenguaje.setText(lenguaje);
@@ -37,8 +39,8 @@ public class MainActivity2 extends AppCompatActivity {
 
     }
 
-    public void lblsetText(String names){
-        lblName.setText(names);
+    public void lblsetText(){
+        lblName.setText(name);
     }
 
     public void Volver(View view){

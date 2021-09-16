@@ -25,7 +25,7 @@ public class MainActivity extends AppCompatActivity {
     public String lenguaje;
     public String fav;*/
 
-    String name = "lll";
+    CharSequence name;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -62,15 +62,13 @@ public class MainActivity extends AppCompatActivity {
     public void btnAccept(View view){
         //getInformation();
 
-        //name = String.valueOf(txtName.getText());
+        name = txtName.getText();
         //lastName = String.valueOf(txtLastName.getText());
 
         MainActivity2 m2 = new MainActivity2();
 
         //m2.name = setText
         //m2.lastName = String.valueOf(txtLastName.getText());
-
-        //m2.lblsetText("asdasdxddd");
 
         Intent intent2 = new Intent(this, MainActivity2.class);
         startActivity(intent2);
