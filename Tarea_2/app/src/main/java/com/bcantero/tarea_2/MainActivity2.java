@@ -13,7 +13,7 @@ public class MainActivity2 extends AppCompatActivity {
     private Button btnVolver;
     private TextView lblName, lblLenguaje, lblFav;
 
-    public CharSequence name = "namexf";
+    public String name;
     public String lastName = "lastName";
     public String lenguaje = "lenguaje";
     public String fav = "fav";
@@ -32,7 +32,6 @@ public class MainActivity2 extends AppCompatActivity {
         MainActivity m1 = new MainActivity();
         name = m1.name;
         lblsetText();
-
         /*lblName.setText(name + " " + lastName);
         lblLenguaje.setText(lenguaje);
         lblFav.setText(fav);*/
@@ -40,6 +39,7 @@ public class MainActivity2 extends AppCompatActivity {
     }
 
     public void lblsetText(){
+
         lblName.setText(name);
     }
 

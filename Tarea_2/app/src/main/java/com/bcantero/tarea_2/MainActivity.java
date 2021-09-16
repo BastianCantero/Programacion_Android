@@ -25,7 +25,7 @@ public class MainActivity extends AppCompatActivity {
     public String lenguaje;
     public String fav;*/
 
-    CharSequence name;
+    public String name;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -45,14 +45,8 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-    public void viewToast(View view){
-        /*name = String.valueOf(txtName.getText());
-        lastName = String.valueOf(txtLastName.getText());
-        Toast.makeText(this, "Toast" + name + lastName, Toast.LENGTH_SHORT).show();*/
-    }
-
     public void getInformation(){
-        MainActivity2 m2 = new MainActivity2();
+        //MainActivity2 m2 = new MainActivity2();
 
         //name = String.valueOf(txtName.getText());
         //lastName = String.valueOf(txtLastName.getText());
@@ -62,13 +56,8 @@ public class MainActivity extends AppCompatActivity {
     public void btnAccept(View view){
         //getInformation();
 
-        name = txtName.getText();
-        //lastName = String.valueOf(txtLastName.getText());
-
-        MainActivity2 m2 = new MainActivity2();
-
-        //m2.name = setText
-        //m2.lastName = String.valueOf(txtLastName.getText());
+        name = txtName.getText().toString();
+        //lastName = String.valueOf(txtLastName.getText())
 
         Intent intent2 = new Intent(this, MainActivity2.class);
         startActivity(intent2);
