@@ -20,12 +20,8 @@ public class MainActivity extends AppCompatActivity {
     private RadioGroup radioGroup;
     private RadioButton selectedRadioButton;
 
-    /*public String name;
-    public String lastName;
-    public String lenguaje;
-    public String fav;*/
-
     public String name;
+    public String lastName;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -45,21 +41,15 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-    public void getInformation(){
-        //MainActivity2 m2 = new MainActivity2();
-
-        //name = String.valueOf(txtName.getText());
-        //lastName = String.valueOf(txtLastName.getText());
-
-    }
-
     public void btnAccept(View view){
-        //getInformation();
 
         name = txtName.getText().toString();
-        //lastName = String.valueOf(txtLastName.getText())
+        lastName = txtLastName.getText().toString();
 
         Intent intent2 = new Intent(this, MainActivity2.class);
+
+        intent2.putExtra("name", name);
+        intent2.putExtra("lastName", lastName);
         startActivity(intent2);
     }
 

@@ -14,9 +14,9 @@ public class MainActivity2 extends AppCompatActivity {
     private TextView lblName, lblLenguaje, lblFav;
 
     public String name;
-    public String lastName = "lastName";
-    public String lenguaje = "lenguaje";
-    public String fav = "fav";
+    public String lastName;
+    public String lenguaje;
+    public String fav;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,18 +29,13 @@ public class MainActivity2 extends AppCompatActivity {
         lblLenguaje = findViewById(R.id.lbl2);
         lblFav = findViewById(R.id.lbl3);
 
-        MainActivity m1 = new MainActivity();
-        name = m1.name;
-        lblsetText();
-        /*lblName.setText(name + " " + lastName);
-        lblLenguaje.setText(lenguaje);
-        lblFav.setText(fav);*/
+        Intent intent = getIntent();
 
-    }
+        name = intent.getStringExtra("name");
+        lastName = intent.getStringExtra("lastName");
 
-    public void lblsetText(){
+        lblName.setText(name + " " + lastName);
 
-        lblName.setText(name);
     }
 
     public void Volver(View view){
