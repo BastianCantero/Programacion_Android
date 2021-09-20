@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="ciudades_array">
+        <item>Temuco</item>
+        <item>Villarica</item>
+        <item>Pucon</item>
+    </string-array>
+</resources>
