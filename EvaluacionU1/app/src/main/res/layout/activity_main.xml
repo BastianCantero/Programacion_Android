@@ -15,7 +15,7 @@
 
         <TextView
             android:id="@+id/lblName"
-            android:layout_width="74dp"
+            android:layout_width="wrap_content"
             android:layout_height="56dp"
             android:layout_marginLeft="50dp"
             android:layout_marginTop="7dp"
@@ -190,7 +190,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="Liminte Urbano"
+                android:text="Limite Urbano"
                 android:textSize="13sp" />
         </RadioGroup>
 
